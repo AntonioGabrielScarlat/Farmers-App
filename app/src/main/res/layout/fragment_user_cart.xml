@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/asset_full_fruits_vanilla_semitransparent">
+
+    <TextView
+        android:id="@+id/fragment_user_cart_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Cart"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/fragment_user_cart_tv_total_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Total:"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        android:background="@color/peachy"
+        />
+
+    <TextView
+        android:id="@+id/fragment_user_cart_tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        android:background="@color/peachy"
+
+        />
+
+    <Button
+        android:id="@+id/fragment_user_cart_btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="PAY"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_button_orange" />
+
+    <Button
+        android:id="@+id/fragment_user_cart_btn_delete_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Delete Cart"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_button_orange" />
+
+    <ListView
+        android:id="@+id/fragment_user_cart_lv_added_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:choiceMode="multipleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="user.PaymentActivity">
+
+    <TextView
+        android:id="@+id/payment_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Payment"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/payment_tv_total_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Total:"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        android:background="@color/peachy"
+        />
+
+    <TextView
+        android:id="@+id/payment_tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        android:background="@color/peachy"
+
+        />
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/payment_card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/payment_btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="PAY"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_button_orange" />
+
+</LinearLayout>

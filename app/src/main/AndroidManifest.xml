@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.farmersapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FarmersApp">
+        <activity
+            android:name="other.OpenAppActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="user.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="user.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name="other.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="other.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name="admin.AddProductActivity"
+            android:exported="true" />
+        <activity
+            android:name="user.AddProductToCartActivity"
+            android:exported="true" />
+        <activity
+            android:name="admin.home.AdminHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="user.home.UserHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="user.PaymentActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

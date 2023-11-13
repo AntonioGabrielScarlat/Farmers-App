@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/asset_full_fruits_vanilla_semitransparent"
+    >
+
+    <TextView
+        android:id="@+id/see_eaten_meals_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Products"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/black"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/add_eaten_meal_actv_meal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_eaten_meal_tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Search for a product!"
+        android:textSize="12dp"
+        android:fontFamily="@font/inter_regular"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        />
+
+    <ListView
+        android:id="@+id/fragment_user_meal_plan_lv_meals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:choiceMode="multipleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        />
+
+
+
+</LinearLayout>
